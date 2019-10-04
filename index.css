@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	color: white;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+em {
+	display: block;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro',
+		'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 30px;
+}
+
+h1 {
+	font-family: 'Notable', sans-serif;
+	font-size: 50px;
+	font-style: italic;
+	margin: 0;
+	text-align: right;
+}
+
+h2 {
+	font-family: 'Notable', sans-serif;
+	font-size: 35px;
+	margin-top: 30px;
+}
+
+h3 {
+	font-family: 'Notable', sans-serif;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+img,
+video {
+	margin: 5vh 5vw;
+	width: 50vw;
+}
+
+nav {
+	display: flex;
+}
+
+li,
+p {
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro',
+		'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.background {
+	background-image: url('./images/stars.png');
+	background-repeat: repeat;
+	width: 100vw;
+}
+
+.gradient-background {
+	background-image: radial-gradient(black 60%, #00000000);
+	min-height: 100vh;
+	padding: 5vh 10vw;
+	width: 100vw;
+}
+
+.indent {
+	padding-left: 40px;
+}
+
+.inner-nav {
+	justify-content: flex-end;
+}
+
+.inner-nav a {
+	margin: 3vh 0;
+	padding: 0 2vw;
+}
+
+.inner-nav a:not(:first-child) {
+	border-left: 2px solid white;
+}
+
+.inner-nav p {
+	margin: 0;
+}
+
+.logo {
+	height: 200px;
+	margin: 0;
+	width: 200px;
+}
+
+.right-nav {
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.vertical-image {
+	width: 25vw;
+}
