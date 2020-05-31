@@ -1,0 +1,1 @@
+var modal,close,script;window.location.href.includes("?fcc")&&((modal=document.getElementById("modal")).style.display="flex",(close=document.getElementById("close")).onclick=function(){modal.style.display="none"},(script=document.getElementById("fcc-tests")).setAttribute("src","https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"));

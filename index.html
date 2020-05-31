@@ -13,26 +13,27 @@
 		<link href="./index.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<div class="background">
-			<div class="gradient-background">
-				<nav class="outer-nav">
+		<div id="background">
+			<div id="gradient-background">
+				<header id="header">
 					<img
 						alt="American Imperial Faction Logo"
-						class="logo"
+						id="header-img"
 						src="./images/logo.png"
 					/>
-					<nav class="right-nav">
+					<nav id="nav-bar">
 						<h1>The American Imperial Faction</h1>
-						<nav class="inner-nav">
-							<a href="#about"><p>About</p></a>
-							<a href="#review"><p>Unbiased Review</p></a>
-							<a href="#policies"><p>Main Policies</p></a>
-							<a href="#differences"><p>Differences</p></a>
-							<a href="#candidate"><p>Our Candidate</p></a>
-						</nav>
+						<div>
+							<a class="nav-link" href="#about"><p>About</p></a>
+							<a class="nav-link" href="#review"><p>Unbiased Review</p></a>
+							<a class="nav-link" href="#policies"><p>Main Policies</p></a>
+							<a class="nav-link" href="#differences"><p>Differences</p></a>
+							<a class="nav-link" href="#candidate"><p>Our Candidate</p></a>
+							<a class="nav-link" href="#join"><p>Join the Cause</p></a>
+						</div>
 					</nav>
-				</nav>
-				<div class="text-container">
+				</header>
+				<section id="main-content">
 					<h2 id="about">About</h2>
 					<p>
 						A long time ago, in a galaxy far, far away, the Galactic Empire
@@ -133,7 +134,7 @@
 								decision-making
 							</li>
 						</ul>
-						<video controls>
+						<video controls id="video">
 							<source src="./videos/creation-of-empire.mp4" type="video/mp4" />
 							Your browser does not support the video tag.
 						</video>
@@ -290,8 +291,48 @@
 							</li>
 						</ul>
 					</div>
+					<h2 id="join">Join the Cause</h2>
+					<p>
+						Enter your email below to join our cause. Note: Your email will not
+						actually be saved and will be sent to a mock URL.
+					</p>
+					<div class="indent">
+						<form action="https://www.freecodecamp.com/email-submit" id="form">
+							<label for="email">Your email:</label>
+							<br />
+							<input
+								id="email"
+								name="email"
+								placeholder="janedoe@provider.com"
+								required
+								type="email"
+							/>
+							<br />
+							<br />
+							<input id="submit" type="submit" value="Submit" />
+						</form>
+						<img
+							alt="American Imperial Faction Poster"
+							class="vertical-image"
+							src="./images/aif-poster.png"
+						/>
+					</div>
+				</section>
+				<div id="modal">
+					<h3>Note to viewers</h3>
+					<p>
+						I made this website initially for a project in high school (there
+						may be some references you don't understand) that I presented to the
+						class. I later revisited this website to make some slight
+						modifications to pass tests for the freeCodeCamp curriculum.
+					</p>
+					<button id="close">
+						<p>Close this modal</p>
+					</button>
 				</div>
 			</div>
 		</div>
+		<script id="fcc-tests"></script>
+		<script src="./index.js"></script>
 	</body>
 </html>
